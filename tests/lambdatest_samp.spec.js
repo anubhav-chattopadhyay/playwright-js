@@ -1,12 +1,12 @@
 const { test, expect, chromium } = require('@playwright/test');
 const { assert } = require('console');
-const { LoginRegisterPage } = require('../pageObjects/LoginRegister')
+const { RegisterPage } = require('../pageObjects/lambdatestPlayground/Register')
 
 
 
 test('go to page and check fill register form', async({page}) => {
     
-    const loginRegister = new LoginRegisterPage(page);
+    const Register = new RegisterPage(page);
  await page.goto('https://ecommerce-playground.lambdatest.io/index.php');
  
 
